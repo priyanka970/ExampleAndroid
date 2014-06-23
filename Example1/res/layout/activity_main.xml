@@ -1,8 +1,39 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sedc.example1.MainActivity"
-    tools:ignore="MergeRootFrame" />
+    android:orientation="vertical"
+>
 
+    <TextView
+        android:id="@+id/entertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Text"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/enteredittxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/clickbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click" />
+
+    <TextView
+        android:id="@+id/yourtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:padding="20dp" />
+
+</LinearLayout>
