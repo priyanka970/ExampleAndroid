@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
 	TextView tv1;
 	Button btn;
 	
-	@Override
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
@@ -32,7 +32,6 @@ public class MainActivity extends ActionBarActivity {
 			
 			btn.setOnClickListener(new OnClickListener() {
 				
-				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
 					

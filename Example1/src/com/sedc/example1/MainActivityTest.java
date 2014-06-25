@@ -24,6 +24,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 	protected void setUp() throws Exception
 	{
 		super.setUp();
+		setActivityInitialTouchMode(true);
 		mainact = this.getActivity();
 		
 		edittxt = (EditText)mainact.findViewById(R.id.enteredittxt);
