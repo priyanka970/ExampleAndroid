@@ -87,13 +87,18 @@
          in order to avoid having your file be overridden by tools such as "android update project"
     -->
     <!-- version-tag: 1 -->
- <!--   <target name="help">
-       <junit>
+ <target name="test">
+       <junit printsummary="yes" haltonfailure="yes">
+         <classpath>
+      		<pathelement path="${classpath}"/>
+      		<pathelement location="./libs/junit-4.11.jar"/>
+    	</classpath>
+           
          <formatter type="plain"></formatter>  
            <test name="com.sedc.example1.MainActivityTest">
                
            </test>
        </junit> 
-   </target>-->
-<import file="${sdk.dir}/tools/ant/build.xml" />
+   </target>
+<!-- <import file="${sdk.dir}/tools/ant/build.xml" /> -->
 </project>
